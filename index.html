@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body class="b">
+    <center>
+        <h1>Olympic Symbol</h1>
+        <canvas width="800" height="600" id="ca"></canvas>
+    </center>
+    <script>
+        canvas = document.getElementById("ca");
+ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.strokeStyle= "blue";
+ctx.lineWidth="5";
+ctx.arc(300,250,60,0,100*Math.PI);
+ctx.stroke();
+
+ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.strokeStyle= "black";
+ctx.lineWidth="5";
+ctx.arc(450,250,60,0,100*Math.PI);
+ctx.stroke();
+
+ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.strokeStyle= "red";
+ctx.lineWidth="5";
+ctx.arc(600,250,60,0,100*Math.PI);
+ctx.stroke();
+
+ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.strokeStyle= "yellow";
+ctx.lineWidth="5";
+ctx.arc(375,300,60,0,100*Math.PI);
+ctx.stroke();
+
+ctx = canvas.getContext("2d");
+ctx.beginPath();
+ctx.strokeStyle= "green";
+ctx.lineWidth="5";
+ctx.arc(525,300,60,0,100*Math.PI);
+ctx.stroke();
+    </script>
+    <style>
+      #ca{
+background-color: aliceblue;
+border: black 3px ridge;
+}  
+.b {
+	background-image: url("87128773-abstract-colorful-painting-texture-background-colorful-brush-background.jpg");
+	background-size: cover;
+	background-position: center;
+}
+    </style>
+</body>
+</html>
